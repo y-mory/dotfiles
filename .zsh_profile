@@ -1,5 +1,5 @@
-# ~/.bashrcを読み込む
-if [ -f ~/.bashrc ] ; then . ~/.bashrc ; fi
+# ~/.zshを読み込む
+if [ -f ~/.zshrc ] ; then . ~/.zsh ; fi
 
 # pyenv環境変数
 export PYENV_ROOT="$HOME/.pyenv"

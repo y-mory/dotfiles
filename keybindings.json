@@ -1,0 +1,10 @@
+// keybindings.json
+// 既定値を上書きするには、このファイル内にキー バインドを挿入しますauto[]
+[
+    {
+        "key": "cmd+`",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported"
+    }
+]
+

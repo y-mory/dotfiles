@@ -18,14 +18,27 @@ git config --global core.quotepath false
 
 # ブランチ名をプロンプト表示
 # 初回のみ
-wget -O ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-wget -O ~/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+# wget -O ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+# wget -O ~/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 
-# homebrew
+wget -O ~/.zsh/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+wget -O ~/.zsh/_git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
+
+# homebrewパッケージインストール
 brew bundle install
 
+# 当該ファイルのパスを取得
+this_dir=$(cd $(dirname path); pwd)
+
 # シンボリックリンク
-ln -s .bashrc ~/.bashrc
-ln -s .bash_profile  ~/.bash_profile
-ln -s .vimrc  ~/.vimrc
+ln -s ${this_dir}/.bashrc ~/.bashrc
+ln -s ${this_dir}/.bash_profile  ~/.bash_profile
+ln -s ${this_dir}/.zshrc ~/.zshrc
+ln -s ${this_dir}/.zsh_profile  ~/.zsh_profile
+ln -s ${this_dir}/.vimrc  ~/.vimrc
+
+# VsCde設定
+. install_extensions.sh
+ln -s keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s settings.json ~/Library/Application\ Support/Code/User/settings.json
 
