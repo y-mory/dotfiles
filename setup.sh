@@ -18,9 +18,8 @@ git config --global core.quotepath false
 
 # ブランチ名をプロンプト表示
 # 初回のみ
-# wget -O ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-# wget -O ~/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-
+mkdir ~/.zsh
+wget -O ~/.zsh/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 wget -O ~/.zsh/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 wget -O ~/.zsh/_git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
 
@@ -31,14 +30,12 @@ brew bundle install
 this_dir=$(cd $(dirname path); pwd)
 
 # シンボリックリンク
-ln -s ${this_dir}/.bashrc ~/.bashrc
-ln -s ${this_dir}/.bash_profile  ~/.bash_profile
-ln -s ${this_dir}/.zshrc ~/.zshrc
-ln -s ${this_dir}/.zsh_profile  ~/.zsh_profile
-ln -s ${this_dir}/.vimrc  ~/.vimrc
+ln -sf ${this_dir}/.zshrc ~/.zshrc
+ln -sf ${this_dir}/.zsh_profile  ~/.zsh_profile
+ln -sf ${this_dir}/.vimrc  ~/.vimrc
 
 # VsCde設定
 . install_extensions.sh
-ln -s keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -s settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sf ${this_dir}/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -sf ${this_dir}/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
