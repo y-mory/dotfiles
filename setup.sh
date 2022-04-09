@@ -16,7 +16,7 @@ git config --global core.excludesfile "~/.config/git/ignore"
 git config --global core.pager "LESSCHARSET=utf-8 less"
 git config --global core.quotepath false
 
-# ブランチ名をプロンプト表示
+# git completion prompt 設定
 # 初回のみ
 mkdir ~/.zsh
 wget -O ~/.zsh/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
@@ -34,8 +34,8 @@ ln -sf ${this_dir}/.zshrc ~/.zshrc
 ln -sf ${this_dir}/.zsh_profile  ~/.zsh_profile
 ln -sf ${this_dir}/.vimrc  ~/.vimrc
 
-# VsCde設定
-. install_extensions.sh
-ln -sf ${this_dir}/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -sf ${this_dir}/settings.json ~/Library/Application\ Support/Code/User/settings.json
+# VScode設定
+. ${this_dir}/.vscode/install_extensions.sh
+ln -sf ${this_dir}/.vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -sf ${this_dir}/.vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
