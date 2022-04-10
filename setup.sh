@@ -1,3 +1,9 @@
+# homebrewパッケージインストール
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew upgrade
+brew update
+brew bundle install
+
 # git_setup.sh
 echo 'githubユーザー名を入力してください'
 read user_name
@@ -22,9 +28,6 @@ mkdir ~/.zsh
 wget -O ~/.zsh/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 wget -O ~/.zsh/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 wget -O ~/.zsh/_git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
-
-# homebrewパッケージインストール
-brew bundle install
 
 # 当該ファイルのパスを取得
 this_dir=$(cd $(dirname path); pwd)
