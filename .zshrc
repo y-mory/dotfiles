@@ -5,11 +5,11 @@ alias tree='tree -N'
 
 
 # git-promptの読み込み
-source ~/.zsh/git-prompt.sh
+source ~/.zsh/.git-prompt.sh
 
 # git-completionの読み込み
 fpath=(~/.zsh $fpath)
-zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+zstyle ':completion:*:*:git:*' script ~/.zsh/.git-completion.bash
 autoload -Uz compinit && compinit
 
 # プロンプトのオプション表示設定
