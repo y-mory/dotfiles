@@ -1,8 +1,5 @@
 {
-    "editor.fontFamily": "VL-Gothic-Regular, VL-Gothic-Regular, 'Courier New', monospace",
-    "editor.fontSize": 16,
-    "editor.codeLens": false,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
-    },
-    "window.zoomLevel": -1
+    "editor.fontFamily": "Monaco, Monaco, 'Courier New', monospace",
+    "window.zoomLevel": -1,
+    "editor.fontSize": 14
+}

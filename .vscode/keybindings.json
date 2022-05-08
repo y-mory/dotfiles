@@ -2,9 +2,12 @@
 // 既定値を上書きするには、このファイル内にキー バインドを挿入しますauto[]
 [
     {
-        "key": "cmd+`",
-        "command": "workbench.action.terminal.new",
-        "when": "terminalProcessSupported"
+        "key": "cmd+;",
+        "command": "insertDateString.insertDate"
+    },
+    {
+        "key": "shift+cmd+;",
+        "command": "insertDateString.insertTime"
     }
 ]
 
