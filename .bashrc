@@ -4,8 +4,8 @@ alias ll='ls -lAFG'
 alias tree='tree -N'
 
 # プロンプト表示を変更
-source ~/.bash/.git-prompt.sh
-source ~/.bash/.git-completion.sh
+source ~/.git-prompt.sh
+source ~/.git-completion.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWSTASHSTATE=true

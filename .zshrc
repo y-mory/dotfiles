@@ -21,3 +21,11 @@ GIT_PS1_SHOWUPSTREAM=auto
 # プロンプトの表示設定(好きなようにカスタマイズ可)
 setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f
 \$ '
+
+# docker用 コマンド補完
+fpath=(/usr/local/share/zsh/site-functions $fpath)
+zstyle ':completion:*:*:docker:*' option-stacking yes
+zstyle ':completion:*:*:docker-*:*' option-stacking yes
+autoload -Uz compinit && compinit -i
+
+
