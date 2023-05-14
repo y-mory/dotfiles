@@ -17,3 +17,4 @@ brew bundle check
 
 # brew upgradでパーミッションエラー時
 sudo chown -R $(whoami) $(brew --prefix)/*
+
