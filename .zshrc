@@ -28,4 +28,7 @@ zstyle ':completion:*:*:docker:*' option-stacking yes
 zstyle ':completion:*:*:docker-*:*' option-stacking yes
 autoload -Uz compinit && compinit -i
 
+# pyenv PATH
+export PYENV_ROOT="$HOME/.pyenv"
+
 

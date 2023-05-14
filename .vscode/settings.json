@@ -1,5 +1,13 @@
 {
     "editor.fontFamily": "Monaco, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 12,
+    "editor.codeLens": false,
     "window.zoomLevel": -1,
-    "editor.fontSize": 14
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    }
 }

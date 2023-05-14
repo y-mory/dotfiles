@@ -8,6 +8,11 @@
     {
         "key": "shift+cmd+;",
         "command": "insertDateString.insertTime"
+    },
+    {
+        "key": "cmd+`",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported"
     }
 ]
 
